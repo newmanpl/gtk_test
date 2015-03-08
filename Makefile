@@ -12,8 +12,8 @@ test: test1.c
 	@echo "build test1"
 endif
 ifeq ($(tg),test2)
-test: test2.c
-	$(CC) -o $@ $^ $(CFLAGS)
+test: test2.cc
+	$(CXX) -o $@ $^ $(CFLAGS)
 	@echo "build test2"
 endif
 ifeq ($(tg),test3)
